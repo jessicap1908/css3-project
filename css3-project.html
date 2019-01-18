@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>Final-Project</title>
+ <style>
+  body {
+   background-image: radial-gradient(circle, white, black);
+   ;
+  }
+
+  #name {
+   width: 500px;
+   border: 4px dashed lightblue;
+   text-align: center;
+   padding: 20px;
+   background-image: radial-gradient(circle, lightblue, lightpink);
+   /*The colors of the div name to have the gradient be centered*/
+   color: white;
+   font-size: 40px;
+   text-shadow: 2px 2px blue;
+   position: relative;
+   transform: translate(420px, 250px)
+  }
+
+  #circle1 {
+   width: 70px;
+   height: 70px;
+   background-color: lightblue;
+   border-radius: 70px;
+   position: relative;
+   transform: translate(50px, 50px);
+   transition: background-color 2s, transform 2s;
+   animation-name: circle1;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+
+  }
+
+  
+
+  @keyframes circle1 {
+   0% {
+    transform: translate(50px, 50px) rotate(20deg);
+    background-color: lightblue;
+
+   }
+   25% {
+    transform: translate(50px, 50px) rotate(20deg);
+    background-color: lightblue;
+   }
+   50% {
+    transform: translate(50px, 50px) rotate(40deg);
+    background-color: lightgrey;
+   }
+   75% {
+    transform: translate(50px, 50px) rotate(5deg);
+    background-color: lightyellow;
+   }
+   100% {
+    transform: translate(50px, 50px) rotate(5deg);
+    background-color: lightpink;
+   }
+  }
+
+  #circle2 {
+   width: 70px;
+   height: 70px;
+   background: lightpink;
+   border-radius: 70px;
+   position: relative;
+   transform: translate(1150px, 0px);
+   transition: background-color 2s, transform 2s;
+   animation-name: circle2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+
+  }
+@keyframes circle2 {
+   0% {
+    transform: translate(1150px, 0px) rotate(20deg);
+    background-color: lightblue;
+
+   }
+   25% {
+    transform: translate(1150px, 0px) rotate(20deg);
+    background-color: lightblue;
+   }
+   50% {
+    transform: translate(1150px, 0px) rotate(40deg);
+    background-color: lightgrey;
+   }
+   75% {
+    transform: translate(1150px, 0px) rotate(5deg);
+    background-color: lightyellow;
+   }
+   100% {
+    transform: translate(1150px, 0px) rotate(5deg);
+    background-color: lightpink;
+   }
+  }
+
+  #circle3 {
+   width: 70px;
+   height: 70px;
+   background-color: lightblue;
+   border-radius: 70px;
+   position: relative;
+   transform: translate(50px, 50px);
+   transition: background-color 2s, transform 2s;
+  }
+
+  #circle3:hover {
+   background-color: lightpink;
+   transform: rotate(180deg);
+  }
+
+  #circle4 {
+   width: 70px;
+   height: 70px;
+   background-color: lightpink;
+   border-radius: 70px;
+   position: relative;
+   transform: translate(1150px, 0px);
+   transition: background-color 2s, transform 2s;
+   animation-name: circle4;
+   animation-duration: 10s;
+   animation-iteration-count: 1;
+
+  }
+
+  #circle4:hover {
+   background-color: lightblue;
+   transform: rotate(180deg);
+  }
+
+  .Star {
+   width: 100px;
+   position: relative;
+   animation-name: Star;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   transform: translate(1150px, 500px);
+  }
+
+  @keyframes Star {
+   0% {
+    transform: rotateX(0deg);
+   }
+   25% {
+    transform: rotateX(180deg);
+   }
+   50% {
+    transform: rotateX(360deg);
+   }
+   75% {
+    transform: rotateX(-180deg);
+   }
+   100% {
+    transform: rotateX(0deg);
+   }
+  }
+
+  .Star2 {
+   width: 100px;
+   position: relative;
+   animation-name: Star2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+  }
+
+  @keyframes Star2 {
+   0% {
+    transform: rotateY(0deg) translate(500px, 400px);
+
+   }
+   25% {
+    transform: rotateY(180deg) translate(-500px, 0px);
+
+   }
+   50% {
+    transform: rotateY(360deg) translate(0px, 0px);
+
+   }
+   75% {
+    transform: rotateY(-180deg) translate(0px, 0px);
+   }
+   100% {
+    transform: rotateY(0deg) translate(0px, 0px);
+    ;
+   }
+  }
+ </style>
+</head>
+
+<body>
+ <div id="name">
+  <p>Jessica</p>
+ </div>
+ <div id="circle1">circle1</div>
+ <div id="circle2">circle2</div>
+ <div id="circle3">circle3</div>
+ <div id="circle4">circle4</div>
+ <img src="images/Star.png" class="Star" alt="Star-Image">
+ <!--Star.png credits to pixabay-->
+ <img src="images/Star2.png" class="Star2" alt="Star2-Image">
+ <!--Star2.png credits to jhnri4 and OCAL-->
+
+</body>
+
+</html>
