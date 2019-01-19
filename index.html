@@ -14,18 +14,17 @@
   #name {
    width: 500px;
    border: 4px dashed lightblue;
-   text-align: center;
    padding: 20px;
-   background-image: radial-gradient(circle, lightblue, lightpink);
-   /*The colors of the div name to have the gradient be centered*/
+  text-align: center; 
+   background-image: radial-gradient(circle, lightblue, lightpink); /*The radial gradient allows the colors to fade from the center */
    color: white;
    font-size: 40px;
    text-shadow: 2px 2px blue;
-   position: relative;
+   position: relative; /*Position relative to its normal position*/
    transform: translate(420px, 250px)
   }
 
-  #circle1 {
+  #circle1 {  /*This circle is the one on the top left*/
    width: 70px;
    height: 70px;
    background-color: lightblue;
@@ -33,15 +32,15 @@
    position: relative;
    transform: translate(50px, 50px);
    transition: background-color 2s, transform 2s;
-   animation-name: circle1;
-   animation-duration: 10s;
-   animation-iteration-count: infinite;
-
+   animation-name: circle1; /*This gives it the name to then be able to use it for the keyframes*/
+   animation-duration: 10s; /*The timing the animation will take*/
+   animation-iteration-count: infinite; /*The amout of times the directions for the animation will occur*/
   }
 
   
 
   @keyframes circle1 {
+   /*Each percentage from zero percent to one hundred percent has a change of roation and its placing is specific*/
    0% {
     transform: translate(50px, 50px) rotate(20deg);
     background-color: lightblue;
@@ -65,7 +64,7 @@
    }
   }
 
-  #circle2 {
+  #circle2 { /*This circle is the one on the top right*/
    width: 70px;
    height: 70px;
    background: lightpink;
@@ -73,12 +72,12 @@
    position: relative;
    transform: translate(1150px, 0px);
    transition: background-color 2s, transform 2s;
-   animation-name: circle2;
+   animation-name: circle2;  /*This gives it the name to then be able to use it for the keyframes*/
    animation-duration: 10s;
    animation-iteration-count: infinite;
 
   }
-@keyframes circle2 {
+@keyframes circle2 { /*Each percentage from zero percent to one hundred percent has a change of roation at it's specific placing*/
    0% {
     transform: translate(1150px, 0px) rotate(20deg);
     background-color: lightblue;
@@ -102,7 +101,7 @@
    }
   }
 
-  #circle3 {
+  #circle3 { /*This circle is the one on the bottom left*/
    width: 70px;
    height: 70px;
    background-color: lightblue;
@@ -112,12 +111,12 @@
    transition: background-color 2s, transform 2s;
   }
 
-  #circle3:hover {
+  #circle3:hover { /*When your mouse in on top of this circle it changes its color to pink and rotates under hover*/
    background-color: lightpink;
    transform: rotate(180deg);
   }
 
-  #circle4 {
+  #circle4 { /*This circle is the one on the bottom right*/
    width: 70px;
    height: 70px;
    background-color: lightpink;
@@ -125,27 +124,25 @@
    position: relative;
    transform: translate(1150px, 0px);
    transition: background-color 2s, transform 2s;
-   animation-name: circle4;
-   animation-duration: 10s;
-   animation-iteration-count: 1;
 
   }
 
-  #circle4:hover {
+  #circle4:hover { /*When your mouse in on top of this circle it changes its color to blue and rotates under hover*/
    background-color: lightblue;
    transform: rotate(180deg);
   }
 
-  .Star {
+  .Star { /*This star is the one all the way on the left */
    width: 100px;
    position: relative;
-   animation-name: Star;
+   animation-name: Star;  /*This gives it the name to then be able to use it for the keyframes*/
    animation-duration: 10s;
    animation-iteration-count: infinite;
    transform: translate(1150px, 500px);
   }
 
   @keyframes Star {
+   /*Each percentage from zero percent to one hundred percent has a change of roation across the x axis at it's specific placing*/
    0% {
     transform: rotateX(0deg);
    }
@@ -163,15 +160,16 @@
    }
   }
 
-  .Star2 {
+  .Star2 { /*This star is the one that moves from the center to the left*/
    width: 100px;
    position: relative;
-   animation-name: Star2;
+   animation-name: Star2;  /*This gives it the name to then be able to use it for the keyframes*/
    animation-duration: 10s;
    animation-iteration-count: infinite;
   }
 
   @keyframes Star2 {
+   /*Each percentage from zero percent to one hundred percent has a change of roation across the y axis at it's specific placing changes*/
    0% {
     transform: rotateY(0deg) translate(500px, 400px);
 
